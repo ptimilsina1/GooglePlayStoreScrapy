@@ -7,7 +7,7 @@ from scrapy.selector import HtmlXPathSelector
 from googleplayappscrawlerscrapy.items import GoogleplayappscrawlerscrapyItem
 from urllib.parse import urlparse
 
-gmaps = googlemaps.Client(key='AIzaSyD7y5SE83A2Xrlmt6MICT-2aYhsUsONScU')
+gmaps = googlemaps.Client(key='XXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
 class MySpider(CrawlSpider):
   name = "gplaycrawler"
