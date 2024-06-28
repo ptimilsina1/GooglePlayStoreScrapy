@@ -1,0 +1,12 @@
+Create table GPScrape(Author VARCHAR(100)character set utf8mb4,Content_rating VARCHAR(50),Country VARCHAR(30) character set utf8mb4,CurrentVersion VARCHAR(25),Description VARCHAR(7500) character set utf8mb4,Developer_ID VARCHAR(200),Developer_badge VARCHAR(15),Downloads VARCHAR(15),Filesize VARCHAR(25),Genre VARCHAR(50),Item_name VARCHAR(50) character set utf8mb4,Official_link VARCHAR(200),Official_mail VARCHAR(200),OperatingSystems VARCHAR(25),Physical_address VARCHAR(150) character set utf8mb4,Price VARCHAR(10),Rating_value VARCHAR(5),Review_number VARCHAR(15),Updated VARCHAR(50),Video_URL VARCHAR(100),five_stars VARCHAR(12),four_stars VARCHAR(12),one_star VARCHAR(12),review VARCHAR(5000) character set utf8mb4,similar_apps VARCHAR(2500) character set utf8mb4,three_stars VARCHAR(12),two_stars VARCHAR(12),whats_new VARCHAR(750) character set utf8mb4);
+
+select Item_name ,Rating_value,Convert(Replace(Review_number,',',''),Unsigned Integer) as Review_number,Downloads,Genre,Convert(Replace(five_stars,',',''),Unsigned Integer) as five_stars from GPScrape  order by Review_number desc limit 10;
+
+
+
+Create table GPScrape(Author,Content_rating ,Country,CurrentVersion,Description ,'
+                        'Developer_ID,Developer_badge,Downloads,Filesize,Genre,'
+                        'Item_name,Official_link,Official_mail,OperatingSystems ,'
+                        'Physical_address,Price ,Rating_value,Review_number,Updated ,'
+                        'Video_URL,five_stars,four_stars,one_star,review,similar_apps ,'
+                        'three_stars,two_stars,whats_new)'
